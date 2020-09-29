@@ -1,0 +1,228 @@
+
+<!DOCTYPE HTML>
+<html>
+  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="common/js/form_init.js" id="form_init_script"
+    data-name="">
+    </script>
+	
+	<script type="text/javascript">
+	function fun()
+	{
+	
+	var x=0;
+	var res;
+	var len=document.getElementById('vno').value.length;
+	
+	
+	res=document.getElementById('vno').value;
+	if(res=="" OR len!=10)
+	{
+	document.getElementById('vno').style.borderColor="red";
+	x++;
+	//return false;
+	}
+	res=document.getElementById('lno').value;
+	len=document.getElementById('lno').value.length;
+	
+	if(res=="" OR len!=13)
+	{
+	document.getElementById('lno').style.borderColor="red";
+	x++;
+	//return false;
+	}
+	
+	res=document.getElementById('loc').value;
+	if(res=="")
+	{
+	document.getElementById('loc').style.borderColor="red";
+	x++;
+	//return false;
+	}
+	
+	
+	res=document.getElementById('date').value;
+	if(res=="")
+	{
+	document.getElementById('date').style.borderColor="red";
+	x++;
+	//return false;
+	}
+	
+	res=document.getElementById('cmnts').value;
+	if(res=="")
+	{
+	document.getElementById('cmnts').style.borderColor="red";
+	x++;
+	//return false;
+	}
+	if(x==0)
+	return true;
+	return false;
+	
+	}
+	</script>
+	
+	
+    <link rel="stylesheet" type="text/css" href="css/default.css"
+    id="theme" />
+    <title>
+    </title>
+  </head>
+  
+  <body><style>#docContainer .fb_cond_applied{ display:none; }</style><noscript><style>#docContainer .fb_cond_applied{ display:inline-block; }</style></noscript><form class="fb-toplabel fb-100-item-column selected-object" id="docContainer"
+action="officer_page.php" onsubmit="return fun();" enctype="multipart/form-data" method="POST" novalidate="novalidate"
+data-form="preview">
+  <div class="fb-form-header" id="fb-form-header1" style="min-height: 0px;">
+    <a class="fb-link-logo" id="fb-link-logo1" target="_blank"><img title="Alternative text" class="fb-logo" id="fb-logo1" style="display: none;" alt="Alternative text" src="common/images/image_default.png"/></a>
+  </div>
+  <div class="section" id="section1">
+    <div class="column ui-sortable" id="column1">
+      <div class="fb-item fb-100-item-column" id="item1">
+        <div class="fb-header fb-item-alignment-center">
+          <h2 style="display: inline;">
+            OFFENCE REGISTRATION FORM
+          </h2>
+        </div>
+      </div>
+	  <h4 align="right"><a href="http://localhost/RTO_NEW/Login_form/index.php">LOGOUT</a></h4><br/><br/>
+      <div class="fb-item fb-66-item-column" id="item2">
+        <div class="fb-grouplabel">
+          <label id="item2_label_0" style="display: inline;">Licence number</label>
+        </div>
+        <div class="fb-input-box">
+          <input name="lno" id="lno" type="text" maxlength="13" placeholder=""
+          autocomplete="off" data-hint="" />
+        </div>
+      </div>
+      <div class="fb-item fb-66-item-column" id="item3">
+        <div class="fb-grouplabel">
+          <label id="item3_label_0" style="display: inline;">Vehicle Number</label>
+        </div>
+        <div class="fb-input-box">
+          <input name="vno" id="vno" type="text" maxlength="254" placeholder=""
+          autocomplete="off" data-hint="" />
+        </div>
+      </div>
+      <div class="fb-item fb-66-item-column" id="item4">
+        <div class="fb-grouplabel">
+          <label id="item4_label_0" style="display: inline;">Location</label>
+        </div>
+        <div class="fb-input-box">
+          <input name="loc" id="loc" type="text" maxlength="254" placeholder=""
+          autocomplete="off" data-hint="" />
+        </div>
+      </div>
+      <div class="fb-item fb-100-item-column" id="item5">
+        <div class="fb-grouplabel">
+          <label id="item5_label_0">offence Type</label>
+        </div>
+        <div class="fb-dropdown">
+		<select name="type" id="item10_select_1" required data-hint="">
+ <option id="type" selected value="">
+              List Of Offences
+            </option>
+            <option id="item10_1_option" value="Driving without carrying a Valid Driving License.">
+              Driving without carrying a Valid Driving License.   
+            </option>
+			
+			<option id="item10_2_option" value="Driving without a Valid Auto Insurance.">
+              Driving without a Valid Auto Insurance.
+            </option>
+
+						<option id="item10_2_option" value="Driving without a Valid Permit.">
+              Driving without a Valid Permit.
+            </option>
+			
+						<option id="item10_2_option" value="Driving without Valid Vehicle Fitness Certificate.">
+              Driving without Valid Vehicle Fitness Certificate.
+            </option>
+			
+						<option id="item10_2_option" value=" Vehicle without RC Book (Registration Certificate)">
+              Vehicle without RC Book (Registration Certificate)
+            </option>
+			
+						<option id="item10_2_option" value=" Driving by a minor (aged below 18).">
+              Driving by a minor (aged below 18).
+            </option>
+			
+						<option id="item10_2_option" value="Driving bikes/ two wheelers without wearing a helmet.">
+              Driving bikes/ two wheelers without wearing a helmet.
+            </option>
+			
+						<option id="item10_2_option" value=" Driving without fastening the seat belts.">
+              Driving without fastening the seat belts.
+            </option>
+			
+						<option id="item10_2_option" value="Not driving in the proper lane.">
+              Not driving in the proper lane.
+            </option>
+			
+						<option id="item10_2_option" value="Driving against One Way.">
+              Driving against One Way.
+            </option>
+			
+						<option id="item10_2_option" value="Taking “U” turn during forbidden hours.">
+             Taking “U” turn during forbidden hours.
+            </option>
+			
+						<option id="item10_2_option" value="Carrying people on Footboard.">
+              Carrying people on Footboard.
+            </option>
+			
+						<option id="item10_2_option" value=" Trippling on bikes/ two wheelers.">
+              Trippling on bikes/ two wheelers.
+            </option>
+			
+            <option id="item10_2_option" value=" Driving on Footpath.">
+             Driving on Footpath.
+            </option>
+            <option id="item10_3_option" value="Use of Offensive Number Plate for vehicle used in driving.">
+              Use of Offensive Number Plate for vehicle used in driving.
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="fb-item fb-50-item-column" id="item6">
+        <div class="fb-grouplabel">
+          <label id="item6_label_0" style="display: inline;">Date</label>
+        </div>
+        <div class="fb-input-date">
+          <input name="date" class="datepicker" id="date" type="date" data-hint=""
+          />
+        </div>
+      </div>
+      <div class="fb-item fb-50-item-column" id="item8">
+        <div class="fb-grouplabel">
+          <label id="item8_label_0" style="display: inline;">Time</label>
+        </div>
+        <div class="fb-input-box">
+          <input name="time" id="time" type="text" maxlength="2" placeholder=""
+          autocomplete="off" data-hint="" />
+        </div>
+      </div>
+      <div class="fb-item fb-100-item-column" id="item7">
+        <div class="fb-grouplabel">
+          <label id="item7_label_0">Comments</label>
+        </div>
+        <div class="fb-textarea">
+          <textarea name="cmnts" id="cmnts" style="resize: none;"
+          maxlength="10000" placeholder="" data-hint=""></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="fb-captcha fb-item-alignment-center" id="fb-captcha_control"
+  style="display: none; cursor: default;">
+    <img src="editordata/images/recaptchawhite.png" />
+  </div>
+  <div class="fb-item-alignment-left fb-footer" id="fb-submit-button-div"
+  style="min-height: 0px;">
+    <input class="fb-button-special" id="fb-submit-button" type="submit" data-regular="url('file:///C:/Users/lavanya%20P/AppData/Local/Temp/FormBuilder/theme/default/images/btn_submit.png')"
+    value="Submit" />
+  </div>
+</form>
+</body>
+</html>
